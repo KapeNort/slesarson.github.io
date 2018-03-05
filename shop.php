@@ -3,7 +3,7 @@
 <head>
 	<?php 
 	
-	$title = "Всё для дома";
+	$title = "Ассортимент";
 	require_once "/blocks/head.php";
 
 	?>
@@ -18,17 +18,15 @@
 				<hr>
 
 				<?php 
-					$index = active;
+					$shop = active;
 					require_once "/blocks/menu.php";
 				?>
+		
 
 				<?php 
-					require_once "/blocks/banner.php";
+					require_once "/blocks/katalog.php";
 				?>
 
-				<?php 
-					require_once "/blocks/why.php";
-				?>
 			
 		</div>
 	</div>

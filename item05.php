@@ -3,7 +3,7 @@
 <head>
 	<?php 
 	
-	$title = "Всё для дома";
+	$title = "Одежда и аксессуары";
 	require_once "/blocks/head.php";
 
 	?>
@@ -18,16 +18,14 @@
 				<hr>
 
 				<?php 
-					$index = active;
+					$it05 = active;
 					require_once "/blocks/menu.php";
 				?>
 
 				<?php 
-					require_once "/blocks/banner.php";
-				?>
-
-				<?php 
-					require_once "/blocks/why.php";
+					$img = "Img/wear1.jpg";
+					$text = file_get_contents('txt/it05.txt');
+					require_once "/blocks/item.php";
 				?>
 			
 		</div>

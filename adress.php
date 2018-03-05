@@ -3,7 +3,7 @@
 <head>
 	<?php 
 	
-	$title = "Всё для дома";
+	$title = "Как до нас добраться";
 	require_once "/blocks/head.php";
 
 	?>
@@ -18,16 +18,13 @@
 				<hr>
 
 				<?php 
-					$index = active;
+					$adress = active;
 					require_once "/blocks/menu.php";
 				?>
 
 				<?php 
-					require_once "/blocks/banner.php";
-				?>
-
-				<?php 
-					require_once "/blocks/why.php";
+					$text = file_get_contents('txt/adress.txt');
+					require_once "/blocks/contacts.php";
 				?>
 			
 		</div>
